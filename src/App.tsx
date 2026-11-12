@@ -28,7 +28,7 @@ export default function App() {
           {/* Logo IAE Oficial */}
           <div className="flex items-center">
             <img
-              src="/iae-official-darkbg.png"
+              src={`${import.meta.env.BASE_URL}iae-official-darkbg.png`}
               alt="IAE Business School"
               className="h-10 w-auto object-contain filter drop-shadow-md rounded-md"
             />
@@ -40,7 +40,7 @@ export default function App() {
           {/* Logo Mi Gusto sin fondo */}
           <div className="flex items-center">
             <img
-              src="/logo-migusto.png"
+              src={`${import.meta.env.BASE_URL}logo-migusto.png`}
               alt="Mi Gusto"
               className="h-9 w-auto object-contain filter drop-shadow-sm"
             />
