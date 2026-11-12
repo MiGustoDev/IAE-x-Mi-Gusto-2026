@@ -118,7 +118,7 @@ export const RegistrationForm: React.FC<FormProps> = ({ onSuccess }) => {
       <form
         onSubmit={handleSubmit}
         noValidate
-        className="w-full bg-white rounded-t-[36px] sm:rounded-3xl p-6 sm:p-8 shadow-2xl shadow-blue-950/20 border-t sm:border border-slate-100 flex flex-col justify-between text-left flex-1 h-full"
+        className="w-full bg-white rounded-t-[36px] sm:rounded-3xl p-6 sm:p-8 shadow-2xl shadow-blue-950/20 border-t sm:border border-slate-100 flex flex-col justify-between text-left flex-1"
       >
         {/* Campos distribuidos verticalmente de forma óptima */}
         <div className="flex flex-col justify-around flex-1 py-1 gap-2 sm:gap-3">
@@ -132,6 +132,8 @@ export const RegistrationForm: React.FC<FormProps> = ({ onSuccess }) => {
             <div className="relative">
               <input
                 type="text"
+                name="fullName"
+                autoComplete="name"
                 placeholder="Ej: Sofia Martínez"
                 value={formData.fullName}
                 onChange={(e) => {
@@ -160,6 +162,8 @@ export const RegistrationForm: React.FC<FormProps> = ({ onSuccess }) => {
             <div className="relative">
               <input
                 type="tel"
+                name="phone"
+                autoComplete="tel"
                 placeholder="Ej: 11 5432 1098"
                 value={formData.phone}
                 onChange={(e) => {
@@ -189,6 +193,8 @@ export const RegistrationForm: React.FC<FormProps> = ({ onSuccess }) => {
             <div className="relative">
               <input
                 type="email"
+                name="email"
+                autoComplete="email"
                 placeholder="Ej: sofia.martinez@empresa.com"
                 value={formData.email}
                 onChange={(e) => {
@@ -217,6 +223,8 @@ export const RegistrationForm: React.FC<FormProps> = ({ onSuccess }) => {
             <div className="relative">
               <input
                 type="text"
+                name="company"
+                autoComplete="organization"
                 placeholder="Ej: Innovar Tech / Consultora X"
                 value={formData.company}
                 onChange={(e) => {

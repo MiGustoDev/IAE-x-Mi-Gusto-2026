@@ -17,10 +17,20 @@ export default function App() {
   };
 
   return (
-    <div className="h-[100dvh] w-full bg-[#0a1128] text-slate-100 flex flex-col justify-between pt-3 pb-0 selection:bg-[#233d99] selection:text-white relative overflow-hidden select-none">
-      {/* Decorative ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[550px] h-[350px] bg-blue-600/15 rounded-full blur-[110px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-900/25 rounded-full blur-[130px] pointer-events-none" />
+    <div className="min-h-[100dvh] w-full bg-[#0a1128] text-slate-100 flex flex-col justify-between pt-[max(0.75rem,env(safe-area-inset-top))] pb-[env(safe-area-inset-bottom)] selection:bg-[#233d99] selection:text-white relative overflow-x-hidden overflow-y-auto">
+      {/* Decorative ambient background glows (CSS radial-gradient para máxima compatibilidad y rendimiento en iOS Safari) */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[550px] h-[350px] pointer-events-none rounded-full"
+        style={{
+          background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.18) 0%, rgba(10,17,40,0) 70%)',
+        }}
+      />
+      <div
+        className="absolute bottom-0 right-0 w-[400px] h-[400px] pointer-events-none rounded-full"
+        style={{
+          background: 'radial-gradient(circle at center, rgba(49,46,129,0.25) 0%, rgba(10,17,40,0) 70%)',
+        }}
+      />
 
       {/* Top Bar with Logos (IAE x Mi Gusto Colaboración) */}
       <header className="relative z-10 w-full px-5 max-w-lg mx-auto flex items-center justify-between mb-2.5 shrink-0">
