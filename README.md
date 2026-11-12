@@ -16,11 +16,24 @@ Plataforma web *mobile-first* de alto rendimiento diseñada para la captación, 
 
 ---
 
-## 📸 Vista Previa
+## 📸 Galería de Vistas Previas
 
 <div align="center">
-  <img src="public/screenshots/iPhone-13-PRO-migusto.com.ar.png" alt="Vista Mobile IAE x Mi Gusto" width="340" style="border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
-  <p><em>Interfaz mobile responsive optimizada para dispositivos táctiles</em></p>
+  <table>
+    <tr>
+      <td align="center" valign="top">
+        <img src="public/screenshots/iPhone-13-PRO-migusto.com.ar.png" alt="Formulario de Registro Mobile" width="310" style="border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+        <br />
+        <sub><b>Formulario de Registro</b></sub>
+      </td>
+      <td align="center" valign="top">
+        <img src="public/screenshots/iPhone-14-PRO-migusto.com.ar.png" alt="Panel de Registros / Confirmación" width="310" style="border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+        <br />
+        <sub><b>Panel de Registros / Confirmación</b></sub>
+      </td>
+    </tr>
+  </table>
+  <p><em>Diseño mobile-first optimizado para interacción ágil en smartphones</em></p>
 </div>
 
 ---
